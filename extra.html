@@ -1,0 +1,61 @@
+<html lang='en'>
+<head>
+  <title>Nyaplot</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.14/require.min.js"></script>
+  <script>if(window['d3'] === undefined ||
+   window['Nyaplot'] === undefined){
+    var path = {"d3":"https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min","downloadable":"http://cdn.rawgit.com/domitry/d3-downloadable/master/d3-downloadable"};
+
+
+
+    var shim = {"d3":{"exports":"d3"},"downloadable":{"exports":"downloadable"}};
+
+    require.config({paths: path, shim:shim});
+
+
+require(['d3'], function(d3){window['d3']=d3;console.log('finished loading d3');require(['downloadable'], function(downloadable){window['downloadable']=downloadable;console.log('finished loading downloadable');
+
+	var script = d3.select("head")
+	    .append("script")
+	    .attr("src", "http://cdn.rawgit.com/domitry/Nyaplotjs/master/release/nyaplot.js")
+	    .attr("async", true);
+
+	script[0][0].onload = script[0][0].onreadystatechange = function(){
+
+
+	    var event = document.createEvent("HTMLEvents");
+	    event.initEvent("load_nyaplot",false,false);
+	    window.dispatchEvent(event);
+	    console.log('Finished loading Nyaplotjs');
+
+	};
+
+
+});});
+}
+</script>
+</head>
+<body><div id='vis-ee3c47eb-fe4c-4536-858d-4700041295df'></div>
+<script>
+(function(){
+    var render = function(){
+        var model = {"panes":[{"diagrams":[{"type":"line","options":{"x":"data0","y":"data1","title":"f(x)","color":"rgb(179,226,205)"},"data":"bcb455ce-5747-477c-8f54-e4555207f67d"},{"type":"scatter","options":{"x":"data0","y":"data1","title":"maximo global aleatorySearch","color":"rgb(253,205,172)"},"data":"066cd119-0c42-428a-8513-babf3fb7297a"}],"options":{"legend":true,"zoom":true,"width":800,"xrange":[0.0,10.0],"yrange":[0.0,592.5925924188055]}}],"data":{"bcb455ce-5747-477c-8f54-e4555207f67d":[{"data0":0.0,"data1":0.0},{"data0":0.1,"data1":39.20400000000001},{"data0":0.2,"data1":76.83200000000002},{"data0":0.30000000000000004,"data1":112.908},{"data0":0.4,"data1":147.456},{"data0":0.5,"data1":180.5},{"data0":0.6000000000000001,"data1":212.06400000000008},{"data0":0.7000000000000001,"data1":242.17200000000005},{"data0":0.8,"data1":270.84799999999996},{"data0":0.9,"data1":298.116},{"data0":1.0,"data1":324.0},{"data0":1.1,"data1":348.52400000000006},{"data0":1.2000000000000002,"data1":371.7120000000001},{"data0":1.3,"data1":393.5879999999999},{"data0":1.4000000000000001,"data1":414.176},{"data0":1.5,"data1":433.5},{"data0":1.6,"data1":451.58400000000006},{"data0":1.7000000000000002,"data1":468.45200000000017},{"data0":1.8,"data1":484.128},{"data0":1.9000000000000001,"data1":498.636},{"data0":2.0,"data1":512.0},{"data0":2.1,"data1":524.244},{"data0":2.2,"data1":535.392},{"data0":2.3000000000000003,"data1":545.468},{"data0":2.4000000000000004,"data1":554.4960000000001},{"data0":2.5,"data1":562.5},{"data0":2.6,"data1":569.504},{"data0":2.7,"data1":575.532},{"data0":2.8000000000000003,"data1":580.608},{"data0":2.9000000000000004,"data1":584.7560000000001},{"data0":3.0,"data1":588.0},{"data0":3.1,"data1":590.3640000000001},{"data0":3.2,"data1":591.872},{"data0":3.3000000000000003,"data1":592.548},{"data0":3.4000000000000004,"data1":592.4159999999999},{"data0":3.5,"data1":591.5},{"data0":3.6,"data1":589.8240000000002},{"data0":3.7,"data1":587.412},{"data0":3.8000000000000003,"data1":584.2879999999999},{"data0":3.9000000000000004,"data1":580.476},{"data0":4.0,"data1":576.0},{"data0":4.1000000000000005,"data1":570.884},{"data0":4.2,"data1":565.152},{"data0":4.3,"data1":558.828},{"data0":4.4,"data1":551.9359999999999},{"data0":4.5,"data1":544.5},{"data0":4.6000000000000005,"data1":536.544},{"data0":4.7,"data1":528.092},{"data0":4.800000000000001,"data1":519.1679999999999},{"data0":4.9,"data1":509.796},{"data0":5.0,"data1":500.0},{"data0":5.1000000000000005,"data1":489.8039999999999},{"data0":5.2,"data1":479.23199999999997},{"data0":5.300000000000001,"data1":468.30799999999994},{"data0":5.4,"data1":457.056},{"data0":5.5,"data1":445.5},{"data0":5.6000000000000005,"data1":433.66399999999993},{"data0":5.7,"data1":421.572},{"data0":5.800000000000001,"data1":409.2479999999999},{"data0":5.9,"data1":396.716},{"data0":6.0,"data1":384.0},{"data0":6.1000000000000005,"data1":371.1239999999999},{"data0":6.2,"data1":358.112},{"data0":6.300000000000001,"data1":344.9879999999999},{"data0":6.4,"data1":331.77599999999995},{"data0":6.5,"data1":318.5},{"data0":6.6000000000000005,"data1":305.18399999999997},{"data0":6.7,"data1":291.852},{"data0":6.800000000000001,"data1":278.5279999999999},{"data0":6.9,"data1":265.23599999999993},{"data0":7.0,"data1":252.0},{"data0":7.1000000000000005,"data1":238.8439999999999},{"data0":7.2,"data1":225.79199999999997},{"data0":7.300000000000001,"data1":212.8679999999999},{"data0":7.4,"data1":200.09599999999995},{"data0":7.5,"data1":187.5},{"data0":7.6000000000000005,"data1":175.10399999999993},{"data0":7.7,"data1":162.932},{"data0":7.800000000000001,"data1":151.00799999999992},{"data0":7.9,"data1":139.35599999999997},{"data0":8.0,"data1":128.0},{"data0":8.1,"data1":116.96400000000003},{"data0":8.200000000000001,"data1":106.27199999999989},{"data0":8.3,"data1":95.94799999999992},{"data0":8.4,"data1":86.01599999999996},{"data0":8.5,"data1":76.5},{"data0":8.6,"data1":67.42400000000004},{"data0":8.700000000000001,"data1":58.81199999999991},{"data0":8.8,"data1":50.687999999999946},{"data0":8.9,"data1":43.07599999999998},{"data0":9.0,"data1":36.0},{"data0":9.1,"data1":29.48400000000002},{"data0":9.200000000000001,"data1":23.551999999999943},{"data0":9.3,"data1":18.227999999999962},{"data0":9.4,"data1":13.535999999999985},{"data0":9.5,"data1":9.5},{"data0":9.600000000000001,"data1":6.1439999999999575},{"data0":9.700000000000001,"data1":3.4919999999999756},{"data0":9.8,"data1":1.567999999999989},{"data0":9.9,"data1":0.3959999999999972},{"data0":10.0,"data1":0.0}],"066cd119-0c42-428a-8513-babf3fb7297a":[{"data0":3.333399247724941,"data1":592.5925924188055}]},"extension":[]}
+        var id_name = '#vis-ee3c47eb-fe4c-4536-858d-4700041295df';
+        Nyaplot.core.parse(model, id_name);
+
+        require(['downloadable'], function(downloadable){
+          var svg = d3.select(id_name).select("svg");
+	  if(!svg.empty())
+	    svg.call(downloadable().filename('fig'));
+	});
+    };
+    if(window['Nyaplot']==undefined){
+        window.addEventListener('load_nyaplot', render, false);
+	return;
+    } else {
+       render();
+    }
+})();
+</script>
+</body>
+</html>
